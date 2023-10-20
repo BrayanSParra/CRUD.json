@@ -12,6 +12,37 @@ window.mostrarModal = (id) => {
   idGiftUpdate = id;
   let index = datos.findIndex((item) => item.id == idGiftUpdate);
 
+if (gift === "") {
+  alert("El campo `Gift` es obligatorio.");
+  return;
+}
+
+if (tipo === "") {
+  alert("El campo `Tipo` es obligatorio.");
+  return;
+}
+
+if (tiempo === "") {
+  alert("El campo `Tiempo` es obligatorio.");
+  return;
+}
+
+if (precio === "") {
+  alert("El campo `Precio` es obligatorio.");
+  return;
+}
+
+if (imagen === "") {
+  alert("El campo `Imagen` es obligatorio.");
+  return;
+}
+
+if (fecha === "") {
+  alert("El campo `Fecha` es obligatorio.");
+  return;
+}
+
+
   document.querySelector("#giftModal").value = datos[index].gift;
   document.querySelector("#tipoModal").value = datos[index].tipo;
   document.querySelector("#tiempoModal").value = datos[index].tiempo;
